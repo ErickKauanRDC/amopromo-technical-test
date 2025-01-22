@@ -1,0 +1,1 @@
+# amopromo-technical-test
