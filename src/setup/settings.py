@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 import environ
 
@@ -15,6 +16,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG_MODE', default=False)
 
+
 ALLOWED_HOSTS = env('ALLOWED_HOSTS', default=[])
 
 
@@ -31,6 +33,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'airports',
     'logs',
+    'airlines'
 ]
 
 MIDDLEWARE = [
@@ -116,6 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

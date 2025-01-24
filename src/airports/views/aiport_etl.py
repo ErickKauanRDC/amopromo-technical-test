@@ -44,7 +44,7 @@ class AirportETL:
         """Transform the extracted data into a list of Airport objects."""
         if not airports:
             self.update_log(False, "No airports data to transform.", 0)
-            return None, 0
+            return None
         
         try:
             to_create = [
@@ -63,7 +63,7 @@ class AirportETL:
             return None
 
     def load(self, airports):
-        """Load the transformed data into the database."""
+        """Load the transformed data to database."""
         if not airports:
             self.update_log(False, "No airports data to load.", 0)
             return

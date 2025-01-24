@@ -11,9 +11,9 @@ class ApiClient:
 
     def get(self, endpoint, params=None):
         """Makes a GET request to the API"""
-        url = f"{self.base_url}/{endpoint}/{self.api_key}"
+        url = f"{self.base_url}/{endpoint}/{self.api_key}" if params is None else f"{self.base_url}/{endpoint}/{self.api_key}/{params}"
         try:
-            response = requests.get(url, params=params, auth=self.auth, timeout=10)
+            response = requests.get(url, auth=self.auth, timeout=10)
             response.raise_for_status()
             return response.json()
         except requests.exceptions.RequestException as e:
