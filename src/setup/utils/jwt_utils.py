@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import jwt
 from django.conf import settings
 
@@ -9,7 +9,7 @@ class JWTUtils:
         Encodes the payload into a JWT token.
         """
         secret = settings.SECRET_KEY
-        expiration = datetime.now(datetime.timezone.utc) + timedelta(hours=1) 
+        expiration = datetime.now(timezone.utc) + timedelta(hours=1) 
         payload.update({"exp": expiration})
         return jwt.encode(payload, secret, algorithm=algorithm)
 
