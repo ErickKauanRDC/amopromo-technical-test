@@ -1,1 +1,1 @@
-from .airline_combinator import AirlineCombinatorView
+from .airline_combinator_view import AirlineCombinatorView

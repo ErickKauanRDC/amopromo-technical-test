@@ -1,2 +1,2 @@
-from .aiport_etl import AiportETLView
-from .aiport import AirportViewSet
+from .aiport_etl_view import AiportETLView
+from .aiport_view import AirportViewSet
