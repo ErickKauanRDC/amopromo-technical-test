@@ -62,7 +62,7 @@ The second problem involves consuming another external API to generate round-tri
 
 ### Available Endpoint
 
-- `GET /airline-combinator/<str:from_iata>/<str:to_iata>/<str:departure_date>/<str:return_date>`
+- `GET /api/airlines/airline-combinator/<str:from_iata>/<str:to_iata>/<str:departure_date>/<str:return_date>`
 
 ---
 
@@ -120,7 +120,7 @@ All endpoints are protected by JWT authentication. Users must authenticate and i
      ```
 
 4. **Test the Flight Combinator**:
-   - Access the endpoint: `/airline-combinator/<from_iata>/<to_iata>/<departure_date>/<return_date>`
+   - Access the endpoint: `/api/airlines/airline-combinator/<from_iata>/<to_iata>/<departure_date>/<return_date>`
 
 ---
 
