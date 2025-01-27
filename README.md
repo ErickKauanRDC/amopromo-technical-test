@@ -1,3 +1,7 @@
+Claro! Aqui está o README ajustado com a nova URL da API:
+
+---
+
 # Airports and Flight Combinator Project
 
 This project is a Django-based solution for two technical challenges:
@@ -124,3 +128,10 @@ All endpoints are protected by JWT authentication. Users must authenticate and i
 
 ---
 
+## API URL
+
+The API is hosted at the following URL:
+
+[https://amopromo-technical-test-old-sea-5514.fly.dev/](https://amopromo-technical-test-old-sea-5514.fly.dev/)
+
+---
