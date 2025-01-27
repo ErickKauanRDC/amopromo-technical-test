@@ -1,4 +1,4 @@
-# Amopromo Technical Test
+# Amo Promo Technical Test
 
 This project is a Django-based solution for two technical challenges:
 
