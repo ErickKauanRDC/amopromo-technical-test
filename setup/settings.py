@@ -17,7 +17,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG_MODE', default=False)
 
 
-ALLOWED_HOSTS = env('ALLOWED_HOSTS', default=[])
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
