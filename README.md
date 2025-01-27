@@ -106,8 +106,7 @@ All endpoints are protected by JWT authentication. Users must authenticate and i
      python manage.py makemigrations
      python manage.py migrate
      ```
-     - create superuser to authenticate, with the credentials username: 'amopromo' and password '1234' or any credential you prefer
-     - you will use this user to authenticate and receive the jwt token in the `/api/token/` routine
+   - Create superuser to authenticate, with the credentials username: 'amopromo' and password '1234' or any credential you prefer you will use this user to authenticate and receive the jwt token in the `/api/token/` routine
      ```bash
      python manage.py createsuperuser
      ```
