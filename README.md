@@ -1,8 +1,4 @@
-Claro! Aqui está o README ajustado com a nova URL da API:
-
----
-
-# Airports and Flight Combinator Project
+# Amopromo Technical Test
 
 This project is a Django-based solution for two technical challenges:
 
